@@ -12,8 +12,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import sys
-sys.path.append('.')
-sys.path.append('./Random_Wired_Neural_Network_Model/')
+sys.path.append(r'.')
+sys.path.append(r'./Random_Wired_Neural_Network_Model/')
 from DAGLayer import DAGLayer
 from TrainerComponents import LSR
 from torch.autograd import Variable
@@ -23,6 +23,8 @@ from timeit import default_timer as timer
 if torch.cuda.is_available():
     # Fixing the random seed.
     torch.cuda.manual_seed(1)
+    # Fixing the computer device.
+    torch.cuda.set_device(0)
     # Setting the computer device.
     device = 'cuda'
     # Setting the GPU listener.
@@ -165,7 +167,7 @@ class RandWiredNN(nn.Module):
             # Selecting the best model.
             if len(evalAccs) == 0 or evalAcc >= max(evalAccs):
                 # Saving the model.
-                torch.save(model.train().state_dict(), './RandWiredNN.pt')
+                torch.save(model.train().state_dict(), './RandWiredNN_' + graphName + '.pt')
                 print("Model Saved")
                 # Logging the data.
                 logfile.write("Model Saved\n")
