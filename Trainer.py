@@ -20,6 +20,8 @@ from TrainerComponents import dataLoader
 if torch.cuda.is_available():
     # Fixing the random seed.
     torch.cuda.manual_seed(1)
+    # Fixing the computer device.
+    torch.cuda.set_device(0)
     # Setting the device.
     device = 'cuda'
 else:
