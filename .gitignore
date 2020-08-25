@@ -39,3 +39,8 @@ Datasets/CIFAR10/data_batch_5
 Datasets/CIFAR10/README.md
 Datasets/CIFAR10/test_batch
 *.pt
+Training_Result_Evaluator/Training_Acc_Logging_File_WS-Model-4-0.1.txt
+Training_Result_Evaluator/Evaluating_Loss_Logging_File_WS-Model-4-0.1.txt
+Training_Result_Evaluator/Training_Loss_Logging_File_WS-Model-4-0.1.txt
+Training_Result_Evaluator/Evaluating_Acc_Logging_File_WS-Model-4-0.1.txt
+Training_Logging_File.txt
