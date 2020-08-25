@@ -50,7 +50,7 @@ dagStage = 4
 # The model type.
 modelType = 's'
 # The random graph name.
-graphName = 'WS-Model_4_0.75_'
+graphName = 'WS-Model_4_0.1_'
 
 # Training the model.
 if __name__ == "__main__":
