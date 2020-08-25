@@ -38,3 +38,4 @@ Datasets/CIFAR10/data_batch_4
 Datasets/CIFAR10/data_batch_5
 Datasets/CIFAR10/README.md
 Datasets/CIFAR10/test_batch
+*.pt
