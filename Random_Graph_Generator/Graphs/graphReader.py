@@ -1,7 +1,7 @@
 #============================================================================================#
 #   Copyright:          JarvisLee
 #   Data:               2020/08/25
-#   Project Name:       graphDrawer.py
+#   Project Name:       graphReader.py
 #   Description:        Drawing or loading the random graph.
 #============================================================================================#
 
