@@ -40,7 +40,7 @@ smoothing = 0.1
 # The valur of the channels.
 channels = 78
 # The number of total classes.
-classSize = 10
+classSize = 1000
 # The number of bacth sizes.
 batchSize = 64
 # The number of epoches.
@@ -50,7 +50,7 @@ dagStage = 4
 # The model type.
 modelType = 's'
 # The random graph name.
-graphName = 'WS-Model_4_0.1_'
+graphName = 'WS-Model_4_0.75_'
 
 # Training the model.
 if __name__ == "__main__":
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     for i in range(dagStage):
         graphs.append((graphReader.generateGraphData(graphName + str(i))))
     # Generating the training data.
-    trainSet, devSet = dataLoader.CIFAR10(batchSize)
+    trainSet, devSet = dataLoader.ImageNet(batchSize)
     # Creating the model.
     model = RandWiredNN(3, channels, classSize, graphs, modelType)
     # Setting the optimizer.
