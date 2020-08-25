@@ -75,7 +75,7 @@ if __name__ == "__main__":
         # Spliting the name again.
         nameList = name.split('_')
         # Skipping the non-drawing file.
-        if name != 'graphDrawer' and nameList[-1] != 'Edge':
+        if name != 'graphReader' and nameList[-1] != 'Edge':
             # Getting the graph data.
             nodes, edges = graphReader.generateGraphData(name)
             # Printing the graph data.
