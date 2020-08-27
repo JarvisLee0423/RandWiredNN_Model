@@ -59,7 +59,7 @@ class ERModel():
         return ER, adjMatrix, edge, filename
     # Defining the simple method to generating the ER graph.
     @staticmethod
-    def ERGeneratorSimple(nodes, prob, graphIndex):
+    def ERGeneratorSimple(nodes = 32, prob = 0.1, graphIndex = 0):
         '''
             'nodes' is the total number of the ER Graph. (Default = 32)
             'prob' is the wiring probability of each pair. (Default = 0.1)
