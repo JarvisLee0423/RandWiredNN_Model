@@ -13,18 +13,27 @@ class dataReader():
     # Defining the method to drawing the training result.
     @staticmethod
     def drawData():
-        # Getting the model name.
-        file = open('./Training_Logging_File.txt', 'r')
+        #Getting the folder name.
+        folderName = input("The folder name: ")
+        while True:
+            try:
+                # Getting the model name.
+                file = open('./Training_Result_Evaluator/' + folderName + '_CIFAR10/Training_Logging_File.txt', 'r')
+                break
+            except:
+                print("Wrong Folder Name!")
+                # Getting the folder name.
+                folderName = input("The folder name: ")
         name = file.readline()
         name = name.split('\n')[0]
         # Open the txt file to get the data.
-        file = open('./Training_Result_Evaluator/Evaluating_Acc_Logging_File_' + name + '.txt')
+        file = open('./Training_Result_Evaluator/' + folderName + '_CIFAR10/Evaluating_Acc_Logging_File_' + name + '.txt')
         evalAccs = eval(file.readline())
-        file = open('./Training_Result_Evaluator/Evaluating_Loss_Logging_File_' + name + '.txt')
+        file = open('./Training_Result_Evaluator/' + folderName + '_CIFAR10/Evaluating_Loss_Logging_File_' + name + '.txt')
         evalLosses = eval(file.readline())
-        file = open('./Training_Result_Evaluator/Training_Acc_Logging_File_' + name + '.txt')
+        file = open('./Training_Result_Evaluator/' + folderName + '_CIFAR10/Training_Acc_Logging_File_' + name + '.txt')
         trainAccs = eval(file.readline())
-        file = open('./Training_Result_Evaluator/Training_Loss_Logging_File_' + name + '.txt')
+        file = open('./Training_Result_Evaluator/' + folderName + '_CIFAR10/Training_Loss_Logging_File_' + name + '.txt')
         trainLosses = eval(file.readline())
         # Close the file.
         file.close()
