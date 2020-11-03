@@ -47,3 +47,7 @@ Training_Logging_File.txt
 Random_Graph_Generator/Generator/ERDegree.py
 Random_Graph_Generator/Generator/BADegree.py
 Random_Graph_Generator/Generator/WSDegree.py
+Training_Result_Evaluator/WS_0.75_4_CIFAR10/Evaluating_Acc_Logging_File_WS-Model-4-0.75.txt
+Training_Result_Evaluator/WS_0.75_4_CIFAR10/Evaluating_Loss_Logging_File_WS-Model-4-0.75.txt
+Training_Result_Evaluator/WS_0.75_4_CIFAR10/Training_Acc_Logging_File_WS-Model-4-0.75.txt
+Training_Result_Evaluator/WS_0.75_4_CIFAR10/Training_Loss_Logging_File_WS-Model-4-0.75.txt
