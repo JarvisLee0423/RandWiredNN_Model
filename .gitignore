@@ -55,3 +55,7 @@ Training_Result_Evaluator/ER_0.8_CIFAR10/Evaluating_Acc_Logging_File_ER-Model-0.
 Training_Result_Evaluator/ER_0.8_CIFAR10/Evaluating_Loss_Logging_File_ER-Model-0.8.txt
 Training_Result_Evaluator/ER_0.8_CIFAR10/Training_Loss_Logging_File_ER-Model-0.8.txt
 Training_Result_Evaluator/ER_0.8_CIFAR10/Training_Acc_Logging_File_ER-Model-0.8.txt
+Training_Result_Evaluator/ER_0.6_CIFAR10/Evaluating_Acc_Logging_File_ER-Model-0.6.txt
+Training_Result_Evaluator/ER_0.6_CIFAR10/Evaluating_Loss_Logging_File_ER-Model-0.6.txt
+Training_Result_Evaluator/ER_0.6_CIFAR10/Training_Loss_Logging_File_ER-Model-0.6.txt
+Training_Result_Evaluator/ER_0.6_CIFAR10/Training_Acc_Logging_File_ER-Model-0.6.txt
