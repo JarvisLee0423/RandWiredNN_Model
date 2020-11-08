@@ -463,3 +463,8 @@ Training_Result_Evaluator/128_ER_0.2_CIFAR10/Training_Acc_Logging_File_128-ER-Mo
 Training_Result_Evaluator/128_ER_0.2_CIFAR10/Evaluating_Loss_Logging_File_128-ER-Model-0.2.txt
 Training_Result_Evaluator/128_ER_0.2_CIFAR10/Evaluating_Acc_Logging_File_128-ER-Model-0.2.txt
 Training_Result_Evaluator/128_ER_0.2_CIFAR10/128_ER_0.2.png
+Training_Result_Evaluator/256_ER_0.2_CIFAR10/256_ER_0.2.png
+Training_Result_Evaluator/256_ER_0.2_CIFAR10/Evaluating_Acc_Logging_File_256-ER-Model-0.2.txt
+Training_Result_Evaluator/256_ER_0.2_CIFAR10/Evaluating_Loss_Logging_File_256-ER-Model-0.2.txt
+Training_Result_Evaluator/256_ER_0.2_CIFAR10/Training_Acc_Logging_File_256-ER-Model-0.2.txt
+Training_Result_Evaluator/256_ER_0.2_CIFAR10/Training_Loss_Logging_File_256-ER-Model-0.2.txt
