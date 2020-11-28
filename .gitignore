@@ -2816,3 +2816,4 @@ Training_Result_Evaluator/Stage_2/74_ER_0.2_CIFAR10/Evaluating_Acc_Logging_File_
 Training_Result_Evaluator/Stage_2/74_ER_0.2_CIFAR10/Evaluating_Loss_Logging_File_74-ER-Model-0.2.txt
 Training_Result_Evaluator/Stage_2/74_ER_0.2_CIFAR10/Training_Acc_Logging_File_74-ER-Model-0.2.txt
 Training_Result_Evaluator/Stage_2/74_ER_0.2_CIFAR10/Training_Loss_Logging_File_74-ER-Model-0.2.txt
+*.txt
