@@ -218,9 +218,9 @@ def trainer(trainSet, devSet, graphs):
         evalLoss, evalAcc = evaluator(model.eval(), loss, Cfg.smoothing, Cfg.cs, devSet)
         if Cfg.GPUID > -1:
             # Getting the memory.
-            memory = pynvml.nvmlDeviceGetMemoryInfo(handle).total / 1024/ 1024
+            memory = pynvml.nvmlDeviceGetMemoryInfo(handle).used / 1024 / 1024
             # Printing the evaluating result.
-            print(' - Eval Loss %.4f - Eval Acc %.4f - Memory %.4f' % (evalLoss, evalAcc, memory))
+            print(' - Eval Loss %.4f - Eval Acc %.4f - Memory %.4f/%.4f MB' % (evalLoss, evalAcc, memory, pynvml.nvmlDeviceGetMemoryInfo(handle).total / 1024/ 1024))
         else:
             # Printing the evaluating result.
             print(' - Eval Loss %.4f - Eval Acc %.4f' % (evalLoss, evalAcc))
@@ -231,7 +231,7 @@ def trainer(trainSet, devSet, graphs):
         evalAccs.append(evalAcc)
         if Cfg.GPUID > -1:
             # Logging the training information.
-            logging.info('Epoch [%d/%d] -> Training: Loss [%.4f] - Acc [%.4f] || Evaluating: Loss [%.4f] - Acc [%.4f] || Memory: [%.4f] MB' % (epoch + 1, Cfg.epoches, np.mean(trainLoss), np.mean(trainAcc), evalLoss, evalAcc, memory))
+            logging.info('Epoch [%d/%d] -> Training: Loss [%.4f] - Acc [%.4f] || Evaluating: Loss [%.4f] - Acc [%.4f] || Memory: [%.4f/%.4f] MB' % (epoch + 1, Cfg.epoches, np.mean(trainLoss), np.mean(trainAcc), evalLoss, evalAcc, memory, pynvml.nvmlDeviceGetMemoryInfo(handle).total / 1024/ 1024))
         else:
             # Logging the training information.
             logging.info('Epoch [%d/%d] -> Training: Loss [%.4f] - Acc [%.4f] || Evaluating: Loss [%.4f] - Acc [%.4f]' % (epoch + 1, Cfg.epoches, np.mean(trainLoss), np.mean(trainAcc), evalLoss, evalAcc))
