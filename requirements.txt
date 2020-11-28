@@ -1,0 +1,10 @@
+torch==1.5.0 
+torchvision==0.6.0 
+networkx==2.3 
+numpy==1.18.2 
+matplotlib==2.2.3 
+argparse==1.1 
+tqdm==4.53.0 
+visdom==0.1.8.9 
+easydict==1.9 
+pynvml==8.0.4
