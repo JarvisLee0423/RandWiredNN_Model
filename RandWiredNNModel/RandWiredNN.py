@@ -89,6 +89,6 @@ class RandWiredNN(nn.Module):
         # Applying the full connected layer.
         x = self.fc(x) # [B, 1280] -> [B, numOfClasses]
         # Getting the prediction.
-        x = F.softmax(x, dim = -1) # [B, numOfClasses] -> [B, numOfClasses]
+        x = F.log_softmax(x, dim = -1) # [B, numOfClasses] -> [B, numOfClasses]
         # Returning the result of the RandWiredNN.
         return x
