@@ -1,3 +1,0 @@
-{'Graph':'BA', 'nodes':32, 'initialNodes':5, 'wireableEdge':3}
-{'Graph':'ER', 'nodes':32, 'prob':0.1}
-{'Graph':'WS', 'nodes':32, 'k':4, 'prob':0.1}
