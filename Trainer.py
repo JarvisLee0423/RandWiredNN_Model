@@ -133,7 +133,7 @@ def trainer(trainSet, devSet, graphs):
     # Creating the visdom.
     lossGraph = vis.line(X = [0], Y = [0], opts = dict(legend = ['TrainingLoss', 'EvaluatingLoss'], xlabel = 'Epoches', ylabel = 'Loss', title = f'Training and Evaluating Loss of {Cfg.gt} - {currentTime}'), name = 'TrainingLoss')
     vis.line(X = [0], Y = [0], win = lossGraph, update = 'append', name = 'EvaluatingLoss')
-    accGraph = vis.line(X = [0], Y = [0], opts = dict(legend = ['TrainingAcc', 'EvaluatingAcc'], xlabel = 'Epoches', ylabel = 'Acc', title = f'Training and Evaluating Loss {Cfg.gt} - {currentTime}'), name = 'TrainingAcc')
+    accGraph = vis.line(X = [0], Y = [0], opts = dict(legend = ['TrainingAcc', 'EvaluatingAcc'], xlabel = 'Epoches', ylabel = 'Acc', title = f'Training and Evaluating Acc of {Cfg.gt} - {currentTime}'), name = 'TrainingAcc')
     vis.line(X = [0], Y = [0], win = accGraph, update = 'append', name = 'EvaluatingAcc')
     # Getting the inchannel.
     for _, (data, _) in enumerate(trainSet):
