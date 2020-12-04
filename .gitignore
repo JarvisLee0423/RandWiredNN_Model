@@ -2972,3 +2972,5 @@ FinalYearProject/Training_Result_Evaluator/WSData.png
 Utils/RandGraphGenerator/Generator/BADegree.py
 Utils/RandGraphGenerator/Generator/ERDegree.py
 Utils/RandGraphGenerator/Generator/WSDegree.py
+*.mp4
+*.pptx
